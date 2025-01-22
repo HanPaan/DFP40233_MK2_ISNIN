@@ -3,7 +3,7 @@
 
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles lblNoTel.Click
 
     End Sub
 
@@ -15,7 +15,7 @@
 
     End Sub
 
-    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
+    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles rdbPerempuan.CheckedChanged
 
     End Sub
 End Class
