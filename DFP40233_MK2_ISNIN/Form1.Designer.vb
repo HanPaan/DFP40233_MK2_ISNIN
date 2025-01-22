@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Label1 = New Label()
+        lblMaklumatPelanggan = New Label()
         lblNama = New Label()
         lblNoTel = New Label()
         lblAlamat = New Label()
@@ -30,7 +30,7 @@ Partial Class Form1
         TextBox2 = New TextBox()
         TextBox3 = New TextBox()
         lblNegeri = New Label()
-        ComboBox1 = New ComboBox()
+        cbbNegeri = New ComboBox()
         lblJantina = New Label()
         rdbLelaki = New RadioButton()
         rdbPerempuan = New RadioButton()
@@ -46,9 +46,9 @@ Partial Class Form1
         lblTarikh = New Label()
         dtpTarikh = New DateTimePicker()
         dgvMaklumat = New DataGridView()
-        Column1 = New DataGridViewTextBoxColumn()
-        Column2 = New DataGridViewTextBoxColumn()
-        Column3 = New DataGridViewTextBoxColumn()
+        clnBil = New DataGridViewTextBoxColumn()
+        clnNama = New DataGridViewTextBoxColumn()
+        clnNoTel = New DataGridViewTextBoxColumn()
         BtnCreate = New Button()
         BtnUpdate = New Button()
         BtnRead = New Button()
@@ -56,16 +56,16 @@ Partial Class Form1
         CType(dgvMaklumat, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' Label1
+        ' lblMaklumatPelanggan
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
-        Label1.Location = New Point(305, 26)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(319, 35)
-        Label1.TabIndex = 0
-        Label1.Text = "MAKLUMAT PELANGGAN"
-        Label1.TextAlign = ContentAlignment.TopCenter
+        lblMaklumatPelanggan.AutoSize = True
+        lblMaklumatPelanggan.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        lblMaklumatPelanggan.Location = New Point(305, 26)
+        lblMaklumatPelanggan.Name = "lblMaklumatPelanggan"
+        lblMaklumatPelanggan.Size = New Size(319, 35)
+        lblMaklumatPelanggan.TabIndex = 0
+        lblMaklumatPelanggan.Text = "MAKLUMAT PELANGGAN"
+        lblMaklumatPelanggan.TextAlign = ContentAlignment.TopCenter
         ' 
         ' lblNama
         ' 
@@ -125,13 +125,13 @@ Partial Class Form1
         lblNegeri.TabIndex = 7
         lblNegeri.Text = "Negeri:"
         ' 
-        ' ComboBox1
+        ' cbbNegeri
         ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(116, 276)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(143, 28)
-        ComboBox1.TabIndex = 8
+        cbbNegeri.FormattingEnabled = True
+        cbbNegeri.Location = New Point(116, 276)
+        cbbNegeri.Name = "cbbNegeri"
+        cbbNegeri.Size = New Size(143, 28)
+        cbbNegeri.TabIndex = 8
         ' 
         ' lblJantina
         ' 
@@ -273,33 +273,33 @@ Partial Class Form1
         ' dgvMaklumat
         ' 
         dgvMaklumat.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvMaklumat.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3})
+        dgvMaklumat.Columns.AddRange(New DataGridViewColumn() {clnBil, clnNama, clnNoTel})
         dgvMaklumat.Location = New Point(116, 394)
         dgvMaklumat.Name = "dgvMaklumat"
         dgvMaklumat.RowHeadersWidth = 51
         dgvMaklumat.Size = New Size(424, 79)
         dgvMaklumat.TabIndex = 23
         ' 
-        ' Column1
+        ' clnBil
         ' 
-        Column1.HeaderText = "Bil."
-        Column1.MinimumWidth = 6
-        Column1.Name = "Column1"
-        Column1.Width = 125
+        clnBil.HeaderText = "Bil."
+        clnBil.MinimumWidth = 6
+        clnBil.Name = "clnBil"
+        clnBil.Width = 125
         ' 
-        ' Column2
+        ' clnNama
         ' 
-        Column2.HeaderText = "Nama"
-        Column2.MinimumWidth = 6
-        Column2.Name = "Column2"
-        Column2.Width = 125
+        clnNama.HeaderText = "Nama"
+        clnNama.MinimumWidth = 6
+        clnNama.Name = "clnNama"
+        clnNama.Width = 125
         ' 
-        ' Column3
+        ' clnNoTel
         ' 
-        Column3.HeaderText = "No. tel"
-        Column3.MinimumWidth = 6
-        Column3.Name = "Column3"
-        Column3.Width = 125
+        clnNoTel.HeaderText = "No. tel"
+        clnNoTel.MinimumWidth = 6
+        clnNoTel.Name = "clnNoTel"
+        clnNoTel.Width = 125
         ' 
         ' BtnCreate
         ' 
@@ -361,7 +361,7 @@ Partial Class Form1
         Controls.Add(rdbPerempuan)
         Controls.Add(rdbLelaki)
         Controls.Add(lblJantina)
-        Controls.Add(ComboBox1)
+        Controls.Add(cbbNegeri)
         Controls.Add(lblNegeri)
         Controls.Add(TextBox3)
         Controls.Add(TextBox2)
@@ -369,7 +369,7 @@ Partial Class Form1
         Controls.Add(lblAlamat)
         Controls.Add(lblNoTel)
         Controls.Add(lblNama)
-        Controls.Add(Label1)
+        Controls.Add(lblMaklumatPelanggan)
         Name = "Form1"
         Text = "Form1"
         CType(dgvMaklumat, ComponentModel.ISupportInitialize).EndInit()
@@ -377,7 +377,7 @@ Partial Class Form1
         PerformLayout()
     End Sub
 
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblMaklumatPelanggan As Label
     Friend WithEvents lblNama As Label
     Friend WithEvents lblNoTel As Label
     Friend WithEvents lblAlamat As Label
@@ -385,7 +385,7 @@ Partial Class Form1
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents lblNegeri As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cbbNegeri As ComboBox
     Friend WithEvents lblJantina As Label
     Friend WithEvents rdbLelaki As RadioButton
     Friend WithEvents rdbPerempuan As RadioButton
@@ -401,9 +401,9 @@ Partial Class Form1
     Friend WithEvents lblTarikh As Label
     Friend WithEvents dtpTarikh As DateTimePicker
     Friend WithEvents dgvMaklumat As DataGridView
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents clnBil As DataGridViewTextBoxColumn
+    Friend WithEvents clnNama As DataGridViewTextBoxColumn
+    Friend WithEvents clnNoTel As DataGridViewTextBoxColumn
     Friend WithEvents BtnCreate As Button
     Friend WithEvents BtnUpdate As Button
     Friend WithEvents BtnRead As Button
