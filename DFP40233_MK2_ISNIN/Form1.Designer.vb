@@ -26,9 +26,9 @@ Partial Class Form1
         lblNama = New Label()
         lblNoTel = New Label()
         lblAlamat = New Label()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
-        TextBox3 = New TextBox()
+        txtNama = New TextBox()
+        txtNoTel = New TextBox()
+        txtAlamat = New TextBox()
         lblNegeri = New Label()
         cbbNegeri = New ComboBox()
         lblJantina = New Label()
@@ -94,27 +94,27 @@ Partial Class Form1
         lblAlamat.TabIndex = 3
         lblAlamat.Text = "Alamat:"
         ' 
-        ' TextBox1
+        ' txtNama
         ' 
-        TextBox1.Location = New Point(116, 98)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(337, 27)
-        TextBox1.TabIndex = 4
+        txtNama.Location = New Point(116, 98)
+        txtNama.Name = "txtNama"
+        txtNama.Size = New Size(337, 27)
+        txtNama.TabIndex = 4
         ' 
-        ' TextBox2
+        ' txtNoTel
         ' 
-        TextBox2.Location = New Point(116, 141)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(337, 27)
-        TextBox2.TabIndex = 5
+        txtNoTel.Location = New Point(116, 141)
+        txtNoTel.Name = "txtNoTel"
+        txtNoTel.Size = New Size(337, 27)
+        txtNoTel.TabIndex = 5
         ' 
-        ' TextBox3
+        ' txtAlamat
         ' 
-        TextBox3.Location = New Point(116, 183)
-        TextBox3.Multiline = True
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(337, 71)
-        TextBox3.TabIndex = 6
+        txtAlamat.Location = New Point(116, 183)
+        txtAlamat.Multiline = True
+        txtAlamat.Name = "txtAlamat"
+        txtAlamat.Size = New Size(337, 71)
+        txtAlamat.TabIndex = 6
         ' 
         ' lblNegeri
         ' 
@@ -363,9 +363,9 @@ Partial Class Form1
         Controls.Add(lblJantina)
         Controls.Add(cbbNegeri)
         Controls.Add(lblNegeri)
-        Controls.Add(TextBox3)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
+        Controls.Add(txtAlamat)
+        Controls.Add(txtNoTel)
+        Controls.Add(txtNama)
         Controls.Add(lblAlamat)
         Controls.Add(lblNoTel)
         Controls.Add(lblNama)
@@ -381,9 +381,9 @@ Partial Class Form1
     Friend WithEvents lblNama As Label
     Friend WithEvents lblNoTel As Label
     Friend WithEvents lblAlamat As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtNama As TextBox
+    Friend WithEvents txtNoTel As TextBox
+    Friend WithEvents txtAlamat As TextBox
     Friend WithEvents lblNegeri As Label
     Friend WithEvents cbbNegeri As ComboBox
     Friend WithEvents lblJantina As Label
